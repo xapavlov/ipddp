@@ -4,7 +4,7 @@ alg.maxiter=1000;
 alg.mu=0; % 0 for automatic selection
 
 alg.infeas=false;
-%alg.infeas=false;
+%alg.infeas=true;
 
 costs={};
 times=[];
