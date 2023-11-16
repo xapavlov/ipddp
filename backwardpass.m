@@ -50,8 +50,8 @@ function bp = backwardpass(alg, funcs, fp, bp)
     qx=funcs.qx([x;u]); 
     qu=funcs.qu([x;u]);
 
-    Qx=qx+Qsx'*s+fx'*Vx;
-    Qu=qu+Qsu'*s+fu'*Vx; 
+    Qx=qx+fx'*Vx;
+    Qu=qu+fu'*Vx; 
 
     Qxx=funcs.qxx([x;u])+fx'*Vxx*fx+tensdot(Vx,fxx);
     Qxu=funcs.qxu([x;u])+fx'*Vxx*fu+tensdot(Vx,fxu);
